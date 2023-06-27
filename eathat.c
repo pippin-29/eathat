@@ -1,4 +1,5 @@
 #include <stdio.h>
+/* Checks if input string is in float format */ 
 int is_float(char *c)
 {
 	int i = 0;
@@ -34,6 +35,7 @@ int is_float(char *c)
 	return (decimal_pos);
 }
 
+/* Converts input string into a 32 bit float. */
 float strict_atofloat(char *number)
 {
 	float	f = 0.0;
@@ -71,6 +73,7 @@ float strict_atofloat(char *number)
 	return ((negative == 0) ? f : f * -1);
 }
 
+/* Silly recursion in while loop */
 void	repeat(int *c)
 {
 	*c += 1;
